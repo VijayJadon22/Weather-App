@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:poppins-thin,Arial, Helvetica, sans-serif;
+    /* color: rgb(255, 248, 248); */
+    color: #222831;
+}
+
+body{
+    background: linear-gradient(90deg, rgba(58,119,180,1) 0%, rgba(29,187,253,1) 48%, rgba(69,252,226,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(53, 53, 53);
+}
+.main{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.searchbox{
+    display: flex;
+    height: 8vh;
+    width: 100%;
+    /* border: 1px solid black; */
+    /* margin-top: 1rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    
+}
+
+.searchbox input{
+    width: 60%;
+    height: 6vh;
+    text-align: center;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    /* background-color: white; */
+    background: linear-gradient(90deg, rgba(58,164,180,1) 0%, rgba(29,187,253,1) 48%, rgba(69,124,252,1) 100%);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    color: white;
+}
+
+.searchbox input::placeholder{
+    color: white;
+}
+
+.searchbox button{
+    width: 10%;
+    height: 6vh;
+    border: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.searchbox button i{
+    font-size: 1rem;
+}
+
+.container{
+    height: 80vh;
+    width: 55vw;
+    /* border: 1px solid blue; */
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    /* margin-top: 20px; */
+}
+
+.city-weather{
+    height: 100%;
+    width: 49%;
+    /* border: 2px solid black; */
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-left: 1.8rem;
+    background-color: #87bedd;
+    
+}
+
+.weather-details{
+    height: 92%;
+    width: 51%;
+    /* border: 2px solid black; */
+    background-color: #222831;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.day-details{
+    height: 20%;
+    width: 50%;
+    /* border: 1px solid black; */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 25px;
+    z-index: 10;
+}
+
+.temperature-details{
+    width: 50%;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    z-index: 10;
+    margin-bottom: 55px;
+}
+
+.day{
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+.date{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.location{
+    margin-top: 10px;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.temp-img img{
+    width: 5rem;
+    /* border: 1px solid black; */
+}
+
+.temp-icon i{
+    font-size: 3rem;
+}
+
+.temperature{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.day-temperatue{
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.precipitation-div{
+    margin-top: 30px;
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    width: 80%;
+    height: 2rem;
+    font-size: 1.5rem;
+}
+
+.humidity-div{
+    /* border: 1px solid white; */
+    display: flex;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    width: 80%;
+    height: 2rem;
+    font-size: 1.5rem;
+}
+
+.pressure-div{
+    /* border: 1px solid white; */
+    display: flex;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    width: 80%;
+    height: 2rem;
+    font-size: 1.5rem;
+}
+
+.wind-div{
+    /* border: 1px solid white; */
+    display: flex;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    width: 80%;
+    height: 2rem;
+    font-size: 1.5rem;
+}
+
+.visibility-div{
+    /* border: 1px solid white; */
+    display: flex;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    width: 80%;
+    height: 2rem;
+    font-size: 1.5rem;
+
+}
+
+.location-div{
+    /* border: 1px solid white; */
+    width: 70%;
+}
+.location-div button{
+    margin-top: 15px;
+    width: 100%;
+    height: 2.2rem;
+    border-radius: 10px;
+    border: none;
+    background: linear-gradient(90deg, rgba(58,164,180,1) 0%, rgba(29,187,253,1) 48%, rgba(69,124,252,1) 100%);
+}
+
+.precipitaion-percentage, .humidity-percentage, .wind-speed, .pressure-intensity, .visibility-range{
+    font-size: 1rem;
+    color: white;
+}
+.precipitation-div p{
+    color: white;
+}
+.humidity-div p{
+    color: white;
+}
+.wind-div p{
+    color: white;
+}
+.pressure-div p{
+    color: white;
+}
+.visibility-div p{
+    color: white;
+}
+
+@media screen and (max-width:768px) {
+    *{
+        font-size: 12px;
+    }
+
+    .container{
+        width: 80vw;
+    }
+}
